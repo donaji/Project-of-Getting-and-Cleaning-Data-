@@ -13,5 +13,8 @@ The file run_analysis.R does the analysis required in the 5 steps of the project
 The data set that results of running the "run_analysis.R" file is called "av_data.txt" and can be found in this
 repository.
 
+This data is in the "wide" category of tidy data discussed in the forums of the course, which can be found here:
+https://class.coursera.org/getdata-012/forum/thread?thread_id=234
+
 
 
