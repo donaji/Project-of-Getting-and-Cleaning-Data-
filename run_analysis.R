@@ -72,9 +72,9 @@ names(subject_dat) <- "subject"
 
 ###   merging data   ###
 
-data <- cbind (X_dat, y_dat, subject_dat)
+dat <- cbind (X_dat, y_dat, subject_dat)
 
-# summary(data)
+# summary(dat)
 
 
 ##########################################################################################################
@@ -85,7 +85,7 @@ data <- cbind (X_dat, y_dat, subject_dat)
 ###   If we check the size  of the data with dim(data), the final data has 68 columns, the last two   ###
 ###   are not needed, as those are the "activity" and "subject" columns                               ###
 
-av_data <- ddply(data, .(subject, activity), function(x) colMeans(x[, 1:66]))
+av_data <- ddply(dat, .(subject, activity), function(x) colMeans(x[, 1:66]))
 
 ### Finally, write the data to a new txt file!  ###
 
